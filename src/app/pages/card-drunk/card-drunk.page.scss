@@ -1,0 +1,24 @@
+ion-card {
+  width: 250px;
+  height: 400px;
+
+  ion-card-content {
+    height: 100%;
+  }
+}
+
+.card-head {
+  height: 30%;
+  text-align: left;
+}
+.card-body {
+  height: 50%;
+
+  .card-logo {
+    width: 30%;
+  }
+}
+.card-footer {
+  height: 20%;
+  text-align: right;
+}

@@ -1,0 +1,18 @@
+<ion-content>
+  <div class="container h-100" fxLayout="row" fxLayoutAlign="center center" >
+    <div fxLayout="column" fxLayoutAlign="center center" >
+      <ion-card *ngFor="let item of gameArray"
+                (click)="navigateToGame(item)"
+                [ngStyle]="{'background': setUrl(item.img)}"
+      >
+        <ion-card-header>
+          <ion-card-subtitle class="text-center">{{item.name}}</ion-card-subtitle>
+        </ion-card-header>
+
+        <ion-card-content>
+          {{item.rules}}
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,26 @@
+<ion-content>
+  <div class="container h-100" fxLayout="column" fxLayoutAlign="center center">
+    <ion-card *ngIf="gameFlag">
+      <ion-card-content  fxLayout="column" fxLayoutAlign="center center">
+        <div class="card-head w-100" fxLayoutAlign="start start">
+          {{card.rank}}
+        </div>
+        <div class="card-body" fxLayout="column" fxLayoutAlign="start center">
+          <img *ngIf="card.suit === 'Spades'" class="card-logo" src="../../../assets/Spades.svg" alt="">
+          <img *ngIf="card.suit === 'Diamonds'" class="card-logo" src="../../../assets/Emoji_u2666.svg.png" alt="">
+          <img *ngIf="card.suit === 'Hears'" class="card-logo" src="../../../assets/Naipe_copas.png" alt="">
+          <img *ngIf="card.suit === 'Clubs'" class="card-logo" src="../../../assets/SuitClubs.svg" alt="">
+          <p class="text-center">{{card.text}}</p>
+<!--          {{card.suits}}-->
+        </div>
+        <div class="card-footer w-100" fxLayoutAlign="end end">
+          {{card.rank}}
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-button shape="round" *ngIf="!gameFlag" (click)="gameStart()">Почати гру</ion-button>
+    <ion-button shape="round" *ngIf="gameFlag" (click)="changeCard()">Змінити карту</ion-button>
+    <ion-button shape="round" *ngIf="gameFlag" (click)="navigateToMain()">Закінчити гру</ion-button>
+  </div>
+</ion-content>
