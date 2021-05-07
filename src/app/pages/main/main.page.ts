@@ -15,19 +15,19 @@ export class MainPage implements OnInit {
       rules: 'Правила: Виконати умови та пити',
       link: 'card-drunk',
       img: ''
-    },
-    {
-      name: 'Я ніколи не',
-      rules: 'Правила: Якщо ви робили те що написано на картці, то треба випити',
-      link: 'never-no',
-      img: ''
-    },
-    {
-      name: 'Правда чи дія',
-      rules: 'Правила: Вибрати дію і виконати те що написано на картці',
-      link: 'truth-or-dare',
-      img: ''
     }
+    // {
+    //   name: 'Я ніколи не',
+    //   rules: 'Правила: Якщо ви робили те що написано на картці, то треба випити',
+    //   link: 'never-no',
+    //   img: ''
+    // },
+    // {
+    //   name: 'Правда чи дія',
+    //   rules: 'Правила: Вибрати дію і виконати те що написано на картці',
+    //   link: 'truth-or-dare',
+    //   img: ''
+    // }
   ];
 
   constructor(public router: Router) {
