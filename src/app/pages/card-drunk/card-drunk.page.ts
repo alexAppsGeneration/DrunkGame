@@ -63,10 +63,20 @@ export class CardDrunkPage implements OnInit {
   }
 
   public changeCard() {
-    this.arrayCard.splice(this.card.id, 1);
+    const tempArr = this.arrayCard.map(item => {
+      if (!(item.id === this.card.id)) {
+        return item;
+      }
+    });
+    for (let i = 0; i < tempArr.length; i++) {
+      if (tempArr[i] === undefined) {
+        tempArr.splice(i, 1);
+      }
+    }
+    this.arrayCard = tempArr;
     this.generateRandomCard();
   }
-  
+
   public navigateToMain() {
     this.router.navigate(['main']);
   }
