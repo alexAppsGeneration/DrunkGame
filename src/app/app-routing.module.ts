@@ -16,16 +16,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/main/main.module').then(m => m.MainPageModule)
   },
   {
-    path: 'never-no',
-    loadChildren: () => import('./pages/never-no/never-no.module').then( m => m.NeverNoPageModule)
-  },
-  {
-    path: 'truth-or-dare',
-    loadChildren: () => import('./pages/truth-or-dare/truth-or-dare.module').then( m => m.TruthOrDarePageModule)
-  },
-  {
     path: 'card-drunk',
     loadChildren: () => import('./pages/card-drunk/card-drunk.module').then( m => m.CardDrunkPageModule)
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./pages/admin/admin.module').then(m => m.AdminPageModule)
   },
 ];
 

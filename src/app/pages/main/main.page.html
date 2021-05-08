@@ -1,16 +1,26 @@
 <ion-content>
-  <div class="container h-100" fxLayout="row" fxLayoutAlign="center center" >
-    <div fxLayout="column" fxLayoutAlign="center center" >
-      <ion-card *ngFor="let item of gameArray"
-                (click)="navigateToGame(item)"
-                [ngStyle]="{'background': setUrl(item.img)}"
+  <div class="container h-100" fxLayout="column" fxLayoutAlign="start center">
+    <div class="w-100" fxLayout="column" fxLayoutAlign="center center" >
+      <ion-item class="w-100">
+        <ion-label>{{jsonObj?.selectLanguage?.language}}</ion-label>
+        <ion-select placeholder="{{jsonObj?.selectLanguage?.placeholder}}" (ionChange)="changeLanguage($event)">
+          <ion-select-option
+                             *ngFor="let item of jsonObj?.language"
+                             value="{{item?.type}}">{{item?.value}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div class="gameIcon" fxLayout="column" fxLayoutAlign="center center" >
+      <ion-card
+                (click)="navigateToGame()"
+                [ngStyle]="{'background': setUrl('')}"
       >
         <ion-card-header>
-          <ion-card-subtitle class="text-center">{{item.name}}</ion-card-subtitle>
+          <ion-card-subtitle class="text-center">{{jsonObj?.game?.header}}</ion-card-subtitle>
         </ion-card-header>
 
         <ion-card-content>
-          {{item.rules}}
+          {{jsonObj?.game?.subRules}}
         </ion-card-content>
       </ion-card>
     </div>

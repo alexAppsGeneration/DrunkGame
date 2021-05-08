@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>admin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <ion-item>
+      <ion-label>Название</ion-label>
+      <ion-input [(ngModel)]="field.name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Значение</ion-label>
+      <ion-input [(ngModel)]="field.value"></ion-input>
+    </ion-item>
+    <ion-button (click)="save()">Сохранить</ion-button>
+  </div>
+
+</ion-content>

@@ -1,6 +1,11 @@
 <ion-content>
   <div class="container h-100" fxLayout="column" fxLayoutAlign="center center">
-    <ion-card *ngIf="gameFlag">
+
+    <ion-text color="primary" *ngIf="gameFlag">
+      <h2>{{jsonObj?.buttonsCards?.count}} - {{this.arrayCard.length }}</h2>
+    </ion-text>
+
+    <ion-card *ngIf="gameFlag" (click)="changeCard()">
       <ion-card-content  fxLayout="column" fxLayoutAlign="center center">
         <div class="card-head w-100" fxLayoutAlign="start start">
           {{card.rank}}
@@ -19,8 +24,8 @@
       </ion-card-content>
     </ion-card>
 
-    <ion-button shape="round" *ngIf="!gameFlag" (click)="gameStart()">Почати гру</ion-button>
-    <ion-button shape="round" *ngIf="gameFlag" (click)="changeCard()">Змінити карту</ion-button>
-    <ion-button shape="round" *ngIf="gameFlag" (click)="navigateToMain()">Закінчити гру</ion-button>
+    <ion-button shape="round" *ngIf="!gameFlag" (click)="gameStart()">{{jsonObj?.buttonsCards?.start}}</ion-button>
+    <ion-button shape="round" *ngIf="gameFlag" (click)="changeCard()">{{jsonObj?.buttonsCards?.change}}</ion-button>
+    <ion-button shape="round" *ngIf="gameFlag" (click)="navigateToMain()">{{jsonObj?.buttonsCards?.end}}</ion-button>
   </div>
 </ion-content>

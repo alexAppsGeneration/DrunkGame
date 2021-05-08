@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {CardService} from '../../services/card.service';
 import {CardModel} from '../../models/card.model';
 import {Route, Router} from '@angular/router';
+import {JsonReaderService} from "../../services/json-reader.service";
 
 @Component({
   selector: 'app-card-drunk',
@@ -9,22 +10,50 @@ import {Route, Router} from '@angular/router';
   styleUrls: ['./card-drunk.page.scss'],
 })
 export class CardDrunkPage implements OnInit {
+  public jsonObj: any;
+  public url = '';
+
   public gameFlag: boolean;
   public card: any;
+  private typeLanguage = localStorage.getItem('type');
   private arrayCard = [];
 
-  constructor(private cardService: CardService, public router: Router) {
+  constructor(private jsonService: JsonReaderService, public router: Router) {
+    this.setLanguage(localStorage.getItem('type'));
   }
 
   ngOnInit() {
-    this.cardService.getCardList().snapshotChanges().subscribe(items => {
-      items.forEach(item => {
-        const jsonParser = item.payload.toJSON();
-        jsonParser['$key'] = item.key;
-        this.arrayCard.push(jsonParser as CardModel);
-      });
-    });
+  }
 
+  setLanguage(type) {
+    switch (type) {
+      case 'ru':
+        this.url = './assets/json/jsonTranslatorRus.json';
+        this.jsonService.getJSON(this.url).subscribe(res => {
+          this.jsonObj = res;
+          this.arrayCard = this.jsonObj.cards;
+          console.log(this.jsonObj);
+        });
+        break;
+      case 'ua':
+        this.url = './assets/json/jsonTranslatorUkr.json';
+        this.jsonService.getJSON(this.url).subscribe(res => {
+          this.jsonObj = res;
+          this.arrayCard = this.jsonObj.cards;
+          console.log(this.jsonObj);
+
+        });
+        break;
+      case 'en':
+        this.url = './assets/json/jsonTranslatorEng.json';
+        this.jsonService.getJSON(this.url).subscribe(res => {
+          this.jsonObj = res;
+          this.arrayCard = this.jsonObj.cards;
+          console.log(this.jsonObj);
+
+        });
+        break;
+    }
   }
 
   public gameStart() {
@@ -33,6 +62,7 @@ export class CardDrunkPage implements OnInit {
   }
 
   public changeCard() {
+    this.arrayCard.splice(this.card.id, 1);
     this.generateRandomCard();
   }
 
@@ -44,24 +74,4 @@ export class CardDrunkPage implements OnInit {
   public navigateToMain() {
     this.router.navigate(['main']);
   }
-
-  // private generateCards() {
-  //   const ranks = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
-  //   const suits = ['Clubs', 'Diamonds', 'Hears', 'Spades'];
-  //
-  //   let idCard = 0;
-  //   for (let i = 0; i < suits.length; i++) {
-  //     for (let j = 0; j < ranks.length; j++) {
-  //       const tempObj = {
-  //         rank: ranks[j],
-  //         suit: suits[i],
-  //         // id: idCard
-  //       };
-  //       this.arrayCard.push(tempObj);
-  //       idCard++;
-  //     }
-  //   }
-  // }
-
-
 }

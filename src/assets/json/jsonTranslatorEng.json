@@ -1,0 +1,344 @@
+{
+  "language": [
+    {
+      "type": "ua",
+      "value": "Ukraine"
+    },
+    {
+      "type": "ru",
+      "value": "Russian"
+    },
+    {
+      "type": "en",
+      "value": "English"
+    }
+  ],
+  "game": {
+    "header": "Drinking cards",
+    "subRules": "Rules: Follow the conditions and drink"
+  },
+  "selectLanguage": {
+    "language": "Language",
+    "placeholder": "Select language"
+  },
+  "buttonsCards": {
+    "start": "Start game",
+    "end": "End game",
+    "change": "Change card",
+    "count": "Remaining cards"
+  },
+  "cards": [
+    {
+      "rank": "A",
+      "suit": "Clubs",
+      "text": "Everybody drinks",
+      "id": 0
+    },
+    {
+      "rank": "2",
+      "suit": "Clubs",
+      "text": "The person who got this card must drink",
+      "id": 1
+    },
+    {
+      "rank": "3",
+      "suit": "Clubs",
+      "text": "The person who dropped this card and must come up with a word, then the players in a circle have to come up with a rhyme. Who could not drink",
+      "id": 2
+    },
+    {
+      "rank": "4",
+      "suit": "Clubs",
+      "text": "The person who dropped this card chooses who drinks with him all the time",
+      "id": 3
+    },
+    {
+      "rank": "5",
+      "suit": "Clubs",
+      "text": "The person who dropped this card chooses who should drink now",
+      "id": 4
+    },
+    {
+      "rank": "6",
+      "suit": "Clubs",
+      "text": "Only guys drink",
+      "id": 5
+    },
+    {
+      "rank": "7",
+      "suit": "Clubs",
+      "text": "The person who dropped this card chooses who will drink with him now",
+      "id": 6
+    },
+    {
+      "rank": "8",
+      "suit": "Clubs",
+      "text": "The person who dropped this card will come up with a movement. All players, when they have a drink, have to repeat the movement. Forgot to drink again",
+      "id": 7
+    },
+    {
+      "rank": "9",
+      "suit": "Clubs",
+      "text": "The person who dropped this card will come up with a category. Everyone in a circle has a complement to this category. For example (Category: Professions Words: Bartender ...)",
+      "id": 8
+    },
+    {
+      "rank": "10",
+      "suit": "Clubs",
+      "text": "The person who got this card chooses with whom to take a selfie and is forced to post a photo on the social network",
+      "id": 9
+    },
+    {
+      "rank": "J",
+      "suit": "Clubs",
+      "text": "The person who dropped this card at any moment of the game puts his finger on the table. The last ones who put their finger down are drinking. Can be used many times but only until the next jack",
+      "id": 10
+    },
+    {
+      "rank": "Q",
+      "suit": "Clubs",
+      "text": "All the girls are drinking",
+      "id": 11
+    },
+    {
+      "rank": "K",
+      "suit": "Clubs",
+      "text": "The person who dropped this card is forced to drink a shot",
+      "id": 12
+    },
+    {
+      "rank": "A",
+      "suit": "Diamonds",
+      "text": "Everybody drinks",
+      "id": 13
+    },
+    {
+      "rank": "2",
+      "suit": "Diamonds",
+      "text": "The person who got this card must drink",
+      "id": 14
+    },
+    {
+      "rank": "3",
+      "suit": "Diamonds",
+      "text": "The person who dropped this card and must come up with a word, then the players in a circle have to come up with a rhyme. Who could not drink",
+      "id": 15
+    },
+    {
+      "rank": "4",
+      "suit": "Diamonds",
+      "text": "The person who dropped this card chooses who drinks with him all the time",
+      "id": 16
+    },
+    {
+      "rank": "5",
+      "suit": "Diamonds",
+      "text": "The person who dropped this card chooses who should drink now",
+      "id": 17
+    },
+    {
+      "rank": "6",
+      "suit": "Diamonds",
+      "text": "Only guys drink",
+      "id": 18
+    },
+    {
+      "rank": "7",
+      "suit": "Diamonds",
+      "text": "The person who dropped this card chooses who will drink with him now",
+      "id": 19
+    },
+    {
+      "rank": "8",
+      "suit": "Diamonds",
+      "text": "The person who dropped this card will come up with a movement. All players, when they have a drink, have to repeat the movement. Forgot to drink again",
+      "id": 20
+    },
+    {
+      "rank": "9",
+      "suit": "Diamonds",
+      "text": "The person who dropped this card will come up with a category. Everyone in a circle has a complement to this category. For example (Category: Professions Words: Bartender ...)",
+      "id": 21
+    },
+    {
+      "rank": "10",
+      "suit": "Diamonds",
+      "text": "The person who got this card chooses with whom to take a selfie and is forced to post a photo on the social network",
+      "id": 22
+    },
+    {
+      "rank": "J",
+      "suit": "Diamonds",
+      "text": "The person who dropped this card at any moment of the game puts his finger on the table. The last ones who put their finger down are drinking. Can be used many times but only until the next jack",
+      "id": 23
+    },
+    {
+      "rank": "Q",
+      "suit": "Diamonds",
+      "text": "All the girls are drinking",
+      "id": 24
+    },
+    {
+      "rank": "K",
+      "suit": "Diamonds",
+      "text": "The person who dropped this card is forced to drink a shot",
+      "id": 25
+    },
+    {
+      "rank": "A",
+      "suit": "Hears",
+      "text": "Everybody drinks",
+      "id": 26
+    },
+    {
+      "rank": "2",
+      "suit": "Hears",
+      "text": "The person who got this card must drink",
+      "id": 27
+    },
+    {
+      "rank": "3",
+      "suit": "Hears",
+      "text": "The person who dropped this card and must come up with a word, then the players in a circle have to come up with a rhyme. Who could not drink",
+      "id": 28
+    },
+    {
+      "rank": "4",
+      "suit": "Hears",
+      "text": "The person who dropped this card chooses who drinks with him all the time",
+      "id": 29
+    },
+    {
+      "rank": "5",
+      "suit": "Hears",
+      "text": "The person who dropped this card chooses who should drink now",
+      "id": 30
+    },
+    {
+      "rank": "6",
+      "suit": "Hears",
+      "text": "Only guys drink",
+      "id": 31
+    },
+    {
+      "rank": "7",
+      "suit": "Hears",
+      "text": "The person who dropped this card chooses who will drink with him now",
+      "id": 32
+    },
+    {
+      "rank": "8",
+      "suit": "Hears",
+      "text": "The person who dropped this card will come up with a movement. All players, when they have a drink, have to repeat the movement. Forgot to drink again",
+      "id": 33
+    },
+    {
+      "rank": "9",
+      "suit": "Hears",
+      "text": "The person who dropped this card will come up with a category. Everyone in a circle has a complement to this category. For example (Category: Professions Words: Bartender ...)",
+      "id": 34
+    },
+    {
+      "rank": "10",
+      "suit": "Hears",
+      "text": "The person who got this card chooses with whom to take a selfie and is forced to post a photo on the social network",
+      "id": 35
+    },
+    {
+      "rank": "J",
+      "suit": "Hears",
+      "text": "The person who dropped this card at any moment of the game puts his finger on the table. The last ones who put their finger down are drinking. Can be used many times but only until the next jack",
+      "id": 36
+    },
+    {
+      "rank": "Q",
+      "suit": "Hears",
+      "text": "All the girls are drinking",
+      "id": 37
+    },
+    {
+      "rank": "K",
+      "suit": "Hears",
+      "text": "The person who dropped this card is forced to drink a shot",
+      "id": 38
+    },
+    {
+      "rank": "A",
+      "suit": "Spades",
+      "text": "Everybody drinks",
+      "id": 39
+    },
+    {
+      "rank": "2",
+      "suit": "Spades",
+      "text": "The person who got this card must drink",
+      "id": 40
+    },
+    {
+      "rank": "3",
+      "suit": "Spades",
+      "text": "The person who dropped this card and must come up with a word, then the players in a circle have to come up with a rhyme. Who could not drink",
+      "id": 41
+    },
+    {
+      "rank": "4",
+      "suit": "Spades",
+      "text": "The person who dropped this card chooses who drinks with him all the time",
+      "id": 42
+    },
+    {
+      "rank": "5",
+      "suit": "Spades",
+      "text": "The person who dropped this card chooses who should drink now",
+      "id": 43
+    },
+    {
+      "rank": "6",
+      "suit": "Spades",
+      "text": "Only guys drink",
+      "id": 44
+    },
+    {
+      "rank": "7",
+      "suit": "Spades",
+      "text": "The person who dropped this card chooses who will drink with him now",
+      "id": 45
+    },
+    {
+      "rank": "8",
+      "suit": "Spades",
+      "text": "The person who dropped this card will come up with a movement. All players, when they have a drink, have to repeat the movement. Forgot to drink again",
+      "id": 46
+    },
+    {
+      "rank": "9",
+      "suit": "Spades",
+      "text": "The person who dropped this card will come up with a category. Everyone in a circle has a complement to this category. For example (Category: Professions Words: Bartender ...)",
+      "id": 47
+    },
+    {
+      "rank": "10",
+      "suit": "Spades",
+      "text": "The person who got this card chooses with whom to take a selfie and is forced to post a photo on the social network",
+      "id": 48
+    },
+    {
+      "rank": "J",
+      "suit": "Spades",
+      "text": "The person who dropped this card at any moment of the game puts his finger on the table. The last ones who put their finger down are drinking. Can be used many times but only until the next jack",
+      "id": 49
+    },
+    {
+      "rank": "Q",
+      "suit": "Spades",
+      "text": "All the girls are drinking",
+      "id": 50
+    },
+    {
+      "rank": "K",
+      "suit": "Spades",
+      "text": "The person who dropped this card is forced to drink a shot",
+      "id": 51
+    }
+  ]
+}
