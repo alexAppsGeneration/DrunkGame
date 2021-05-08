@@ -15,8 +15,9 @@ export class CardDrunkPage implements OnInit {
 
   public gameFlag: boolean;
   public card: any;
+  public arrayCard = [];
+
   private typeLanguage = localStorage.getItem('type');
-  private arrayCard = [];
 
   constructor(private jsonService: JsonReaderService, public router: Router) {
     this.setLanguage(localStorage.getItem('type'));
@@ -65,13 +66,13 @@ export class CardDrunkPage implements OnInit {
     this.arrayCard.splice(this.card.id, 1);
     this.generateRandomCard();
   }
+  
+  public navigateToMain() {
+    this.router.navigate(['main']);
+  }
 
   private generateRandomCard() {
     this.card = this.arrayCard[Math.floor(Math.random() * this.arrayCard.length)];
     return this.card;
-  }
-
-  public navigateToMain() {
-    this.router.navigate(['main']);
   }
 }
